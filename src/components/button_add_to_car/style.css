@@ -1,0 +1,99 @@
+.container-add-to-car{
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.concainer-square-add-to-car{
+    border: 1px solid #FFFFFF;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container-btn-add-to-car{
+    background-color: #FFFFFF;
+    padding: 30px 0;
+    width: 170px;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-btn-add-to-car .i-car,
+.container-btn-add-to-car span{
+    color: #000000;
+    font-weight: 700;
+}
+
+.i-car{
+    position: absolute;
+    left: 15px;
+    font-size: 25px;
+}
+
+.container-btn-add-to-car span{
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+}
+
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.i-car-animation{
+    left: 100%;
+    transition: left 2s ease-in-out;
+}
+
+.container-btn-add-to-car .txt-success{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease;
+    color: greenyellow;
+}
+
+.container-btn-add-to-car .txt-success-efect{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 1s ease;
+    transition-delay: 2s;
+}
+
+.i-car-ok{
+    position: absolute;
+    left: -50%;
+    font-size: 25px;
+    color: greenyellow;
+    transition: left 1s ease;
+}
+
+.i-car-ok-effect{
+    position: absolute;
+    left: 15px;
+    transition: left 2s ease;
+    transition-delay: 2s;
+}
+
+
