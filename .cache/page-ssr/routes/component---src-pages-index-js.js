@@ -15,9 +15,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.mjs");
+/* harmony import */ var _button_add_to_car_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../button_add_to_car/style.css */ "./src/components/button_add_to_car/style.css");
+/* harmony import */ var _button_add_to_car_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_button_add_to_car_style_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
 
 const ButtonAddToCar = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
+  const {
+    0: clicked,
+    1: setClicked
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const handleClick = () => {
+    setClicked(true);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container-add-to-car"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "concainer-square-add-to-car"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container-btn-add-to-car",
+    onClick: handleClick
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaShoppingCart, {
+    className: ` i-car ${clicked ? 'i-car-animation' : ''}`
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaCheckCircle, {
+    className: ` i-car-ok ${clicked ? 'i-car-ok-effect' : ''}`
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: `${clicked ? 'fade-out' : ''}`
+  }, "Add to cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: `txt-success ${clicked ? 'txt-success-efect' : ''}`
+  }, "Successful")))));
 };
 
 /***/ }),
@@ -132,9 +159,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const IndexPage = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_recaptcha__WEBPACK_IMPORTED_MODULE_1__.Recaptcha, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_button_add_to_car_ButtonAddToCar__WEBPACK_IMPORTED_MODULE_2__.ButtonAddToCar, null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_button_add_to_car_ButtonAddToCar__WEBPACK_IMPORTED_MODULE_2__.ButtonAddToCar, null));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
+
+/***/ }),
+
+/***/ "./src/components/button_add_to_car/style.css":
+/*!****************************************************!*\
+  !*** ./src/components/button_add_to_car/style.css ***!
+  \****************************************************/
+/***/ (() => {
+
+
 
 /***/ }),
 
